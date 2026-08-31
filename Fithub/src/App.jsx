@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Image } from "./Pages/Frontpage/Frontpage";
+import { Frontpage } from "./Pages/Frontpage/Frontpage";
 
 function App() {
   return (
     <>
-      <Image />
+      <Frontpage />
     </>
   );
 }
