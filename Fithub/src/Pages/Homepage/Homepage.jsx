@@ -3,42 +3,34 @@
 // billeder på slider skal kunne klikkes på
 import { useFetch } from "../../Hooks/useFetch";
 import { useEffect } from "react";
-export function Homepage({ name, image }) {
+export function Homepage({ name }) {
   const { data, isLoading, error } = useFetch(
     import.meta.env.VITE_PUBLIC_BASE_URL + "/api/teams",
   );
-  useEffect(() => {
-    if (data) {
-      console.log("Teams data:", data);
-    }
-  }, [data]);
+  // Bruger name til at finde et hold
+  const matchedTeam =
+    data?.find((item) => {
+      if (!name) return false;
+      return item?.name?.toLowerCase() === name?.toLowerCase();
+    }) || data?.[0];
+  // Henter en billede sti, fra den fundet team
+  const imageUrl = matchedTeam?.image?.url;
+  // Sammen sætter sti, med miljøvariablen
+  const fullImageUrl = imageUrl
+    ? import.meta.env.VITE_PUBLIC_BASE_URL + imageUrl
+    : null;
 
-  function getTeamimage(dataArray, teamName) {
-    // 1. Tjek om dataArray eksisterer og er et array
-    if (!Array.isArray(dataArray)) return [];
+  if (isLoading) return <p>Indlæser...</p>;
+  if (error) return <p>Fejl ved hentning af data</p>;
 
-    return dataArray.filter((item) =>
-      // 2. Brug optional chaining (?.) og den rigtige variabel 'teamName'
-      item?.name?.toLowerCase().includes(teamName?.toLowerCase()),
-    );
-  }
-  // Brug 'data' direkte fra useFetch som det første argument:
-  const matchedTeams = getTeamimage(data, name);
-  const imageUrl = matchedTeams[0]?.image?.url;
-
-  const baseUrl = (import.meta.env.VITE_PUBLIC_BASE_URL || "").replace(
-    /\/$/,
-    "",
-  );
-  const fullImageUrl = imageUrl ? `${baseUrl}${imageUrl}` : null;
   return (
     <>
       {fullImageUrl ? (
-        <img src={fullImageUrl} alt={name || "Team image"} />
+        <img src={fullImageUrl} alt={matchedTeam?.name || "Team image"} />
       ) : (
-        <p>Henter billede...</p>
+        <p>Intet billede tilgængeligt</p>
       )}
-      <h2>hej</h2>
+      <h2>{matchedTeam?.name || "Intet hold valgt"}</h2>
     </>
   );
 }
