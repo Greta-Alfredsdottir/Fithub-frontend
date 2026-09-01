@@ -13,17 +13,31 @@ export function Homepage({ name, image }) {
     }
   }, [data]);
 
-  //   function getTeamimage(imageArray) {
-  //     const Teamimage = imageArray.filter((item) =>
-  //       item.image.description.includes("name"),
-  //     );
-  //     return Teamimage;
-  //   }
+  function getTeamimage(dataArray, teamName) {
+    // 1. Tjek om dataArray eksisterer og er et array
+    if (!Array.isArray(dataArray)) return [];
 
-  //   const Teamimage = getTeamimage(image);
-  //   console.log("Teamimage:", Teamimage[0]);
+    return dataArray.filter((item) =>
+      // 2. Brug optional chaining (?.) og den rigtige variabel 'teamName'
+      item?.name?.toLowerCase().includes(teamName?.toLowerCase()),
+    );
+  }
+  // Brug 'data' direkte fra useFetch som det første argument:
+  const matchedTeams = getTeamimage(data, name);
+  const imageUrl = matchedTeams[0]?.image?.url;
+
+  const baseUrl = (import.meta.env.VITE_PUBLIC_BASE_URL || "").replace(
+    /\/$/,
+    "",
+  );
+  const fullImageUrl = imageUrl ? `${baseUrl}${imageUrl}` : null;
   return (
     <>
+      {fullImageUrl ? (
+        <img src={fullImageUrl} alt={name || "Team image"} />
+      ) : (
+        <p>Henter billede...</p>
+      )}
       <h2>hej</h2>
     </>
   );

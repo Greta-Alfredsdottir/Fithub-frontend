@@ -11,8 +11,9 @@ Password: password
 
 Rapport
 
-Mandag: Jeg starter med at clone API og lave min frontend. Jeg begynder også på min rapport. Der laves mapper og files til frontend og der tages beslutting hvordan opgave skal laves. Jeg Bruger React og scss.Jeg har lagt in billeder og
+Mandag: Jeg starter med at clone API og lave min frontend. Jeg begynder også på min rapport. Der laves mapper og files til frontend og der tages beslutting hvordan opgave skal laves. Jeg Bruger React og scss.Jeg har lagt ind billeder og
 skrivet text, mangler at style.
+
 Tirsdag: Har fået hjælp fra Kasper, hvor han pejede på at jeg havde glemt at bruge kun enslags className. Dette blev rettet. Har lavet beskrivelse på hver side så jeg har en íde hvad jeg mangler.
 Onsdag:
 Torsdag:
