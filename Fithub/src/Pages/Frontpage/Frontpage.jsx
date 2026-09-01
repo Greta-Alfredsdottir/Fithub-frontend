@@ -5,8 +5,12 @@ import style from "./Frontpage.module.scss";
 export function Frontpage() {
   return (
     <>
-      <img className={style.pic1} src={cover2} alt="" />
-      <img src={cover1} alt="" />
+      <div class="container">
+        <img class={style.pic1} src={cover2} alt="" />
+        <div class="bottom-left">Bottom Left</div>
+        <img class={style.pic2} src={cover1} alt="" />
+        <div class="bottom-right">Bottom Right</div>
+      </div>
     </>
   );
 }
