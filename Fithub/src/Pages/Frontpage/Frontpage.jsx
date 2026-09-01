@@ -11,7 +11,7 @@ export function Frontpage() {
         <p>Train like a pro</p>
       </div>
       <img className={style.pic2} src={cover1} alt="" />
-      {/* lave en link til start training */}
+      {/* lave en Navlink til start training, skal peje til /Home*/}
       <div className={style.bottomright}>Start training</div>
     </div>
   );
