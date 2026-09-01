@@ -1,16 +1,22 @@
 .container {
   position: relative;
-  text-align: center;
-  color: white;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 /* Bottom left text */
-.bottom-left {
+.textblock {
   position: absolute;
-  bottom: 8px;
-  left: 16px;
+  bottom: 20px;
+  left: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /* Bottom right text */
-.bottom-right {
+.bottomright {
   position: absolute;
   bottom: 8px;
   right: 16px;
