@@ -1,6 +1,7 @@
 // Hente billeder fra API
 // Lave en slider til classes
 // billeder på slider skal kunne klikkes på
+import { Cards } from "../../Components/Cards/Cards";
 import { useFetch } from "../../Hooks/useFetch";
 import style from "./Homepage.module.scss";
 
@@ -20,20 +21,7 @@ export function Homepage({ name }) {
         alt={"trainerimage"}
       />
       <h2>{data?.[0].name}</h2>
-
-      {/* <!-- Slider main container --> */}
-      <div className={style.Swipercontainer}>
-        {/* <!-- Additional required wrapper --> */}
-        <div className="Swiper-wrapper">
-          {/* <!-- Slides --> */}
-          <img
-            src={"http://localhost:3000/images" + data?.[0].name.url}
-            alt="Classes for you"
-            className="Responsive"
-          />
-          ...
-        </div>
-      </div>
+      <Cards />
     </>
   );
 }
