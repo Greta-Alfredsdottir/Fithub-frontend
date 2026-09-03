@@ -16,7 +16,8 @@ skrivet text, mangler at style.
 
 Tirsdag: Har fået hjælp fra Kasper, hvor han pejede på at jeg havde glemt at bruge kun enslags className. Dette blev rettet. Har lavet beskrivelse på hver side så jeg har en íde hvad jeg mangler. Jeg fik hjælp fra Jack, og endelig fik jeg images frem på homepage.
 
-Onsdag: Kasper hjælp mig med at lave coden lidt simpler, og så har jeg lavet input på searchpage, mangler stadig at lave navlink til min frontpage
+Onsdag: Kasper hjælp mig med at lave coden lidt simpler, og så har jeg lavet input på searchpage, mangler stadig at lave navlink til min frontpage.
+
 Torsdag:
 Fredag:
 

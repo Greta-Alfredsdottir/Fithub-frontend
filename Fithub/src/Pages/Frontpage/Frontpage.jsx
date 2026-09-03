@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import cover1 from "../../assets/cover1.jpg";
 import cover2 from "../../assets/cover2.jpg";
 import style from "./Frontpage.module.scss";
@@ -11,8 +12,10 @@ export function Frontpage() {
         <p>Train like a pro</p>
       </div>
       <img className={style.pic2} src={cover1} alt="" />
-      {/* lave en Navlink til start training, skal peje til /Home*/}
-      <div className={style.bottomright}>Start training</div>
+      {/* lave en box til start training, skal være lys*/}
+      <div className={style.bottomright}>
+        <NavLink href="/Home">Start Training</NavLink>
+      </div>
     </div>
   );
 }

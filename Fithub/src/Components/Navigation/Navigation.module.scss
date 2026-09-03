@@ -1,0 +1,38 @@
+.navlinks {
+  display: flex;
+  list-style: none;
+}
+
+.Menu {
+  display: none;
+  cursor: pointer;
+}
+
+.Menu .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .Menu {
+    display: block;
+  }
+
+  .navlinks {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .navlinks.active {
+    left: 0;
+  }
+}

@@ -3,7 +3,7 @@
 // billeder på slider skal kunne klikkes på
 import { Cards } from "../../Components/Cards/Cards";
 import { useFetch } from "../../Hooks/useFetch";
-import style from "./Homepage.module.scss";
+import { Navigation } from "../../Components/Navigation/Navigation";
 
 export function Homepage({ name }) {
   const { data, isLoading, error } = useFetch(
@@ -16,6 +16,7 @@ export function Homepage({ name }) {
   // string "" med fuld Url + data, så ser man image
   return (
     <>
+      <Navigation />
       <img
         src={"http://localhost:3000" + data?.[0].image.url}
         alt={"trainerimage"}
