@@ -14,7 +14,7 @@ export function Frontpage() {
       <img className={style.pic2} src={cover1} alt="" />
       {/* lave en box til start training, skal være lys*/}
       <div className={style.bottomright}>
-        <NavLink href="/Home">Start Training</NavLink>
+        <NavLink to="/Home">Start Training</NavLink>
       </div>
     </div>
   );
