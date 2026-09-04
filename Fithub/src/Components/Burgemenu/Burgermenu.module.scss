@@ -1,0 +1,53 @@
+.drawerOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drawer {
+  width: 280px;
+  height: 100%;
+  background: #ffffff;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.drawerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  a {
+    color: #1f2937;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    &:hover {
+      color: #d97706;
+    }
+  }
+}

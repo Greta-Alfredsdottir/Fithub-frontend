@@ -1,9 +1,9 @@
 import { Frontpage } from "./Pages/Frontpage/Frontpage";
+import { Classdetails } from "./Pages/Classdetailspage/Classdetailspage";
 import { Homepage } from "./Pages/Homepage/Homepage";
 import { BrowserRouter, Routes, Route } from "react-router";
 import { Searchbar } from "./Pages/Searchpage/Searchpage";
 import { Calender } from "./Pages/Myschedulepage/Myschedulepage";
-import { Loginform } from "./Pages/Login/Login";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/Home" index element={<Homepage />} />
         <Route path="/Search" index element={<Searchbar />} />
         <Route path="/Calender" index element={<Calender />} />
-        <Route path="/Login" index element={<Loginform />} />
+        <Route path="/Details" index element={<Classdetails />} />
       </Routes>
     </BrowserRouter>
   );
