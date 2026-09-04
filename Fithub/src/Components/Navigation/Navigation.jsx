@@ -7,7 +7,7 @@ export function Navigation() {
       <nav className={style.navStyle}>
         <ul>
           <li className={style.linkStyle}>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/Home">Home</NavLink>
           </li>
           <li>
             <NavLink to="/Search">Search</NavLink>

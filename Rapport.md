@@ -20,9 +20,9 @@ Onsdag: Kasper hjælp mig med at lave coden lidt simpler, og så har jeg lavet i
 
 Torsdag: Har fået nav til at virke men har problemmer med at få burgermenu. havde også lidt problemmer med navLink, fandt så ud at min kode car forkert. problem rettet.
 
-Fredag: har lige fået at vide at burgermenu er bare icon, men har meget problem ved at finde ud af hvad jeg skal gøre for at få det hele til at køre som jeg vil.
+Fredag: har lige fået at vide at burgermenu er bare icon, men har meget problem ved at finde ud af hvad jeg skal gøre for at få det hele til at køre som jeg vil. Jeg har endlig fået billeder i cards til at være lidt mindre,
 
-Vurdering af din egen indsats og gennemførelse af prøven.
+Vurdering af din egen indsats og gennemførelse af prøven. ikke godt
 Argumentation for de valg du har truffet under løsningen af opgaven.
 Redegørelse for oprindelsen af de forskellige kodeelementer i prøven.
 Fremhævelse af eventuelle særlige punkter til bedømmelse.

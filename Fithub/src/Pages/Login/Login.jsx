@@ -1,6 +1,7 @@
 // Her skal der laves login
 
 import { React, useState } from "react";
+import { Navigation } from "../../Components/Navigation/Navigation";
 
 export function Loginform(props) {
   // Declares state and sets the initial state value to null
@@ -28,28 +29,31 @@ export function Loginform(props) {
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      <h1>Login</h1>
-      {error ? <h4>{error}</h4> : ""}
-      <input
-        type="text"
-        name="username"
-        required
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.currentTarget.value)}
-      />
-      <input
-        type="password"
-        name="password"
-        required
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.currentTarget.value)}
-      />
-      <button type="submit">
-        {processing ? "Checking credentials..." : "Login"}
-      </button>
-    </form>
+    <>
+      <Navigation />
+      <form onSubmit={onSubmit}>
+        <h1>Login</h1>
+        {error ? <h4>{error}</h4> : ""}
+        <input
+          type="text"
+          name="username"
+          required
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.currentTarget.value)}
+        />
+        <input
+          type="password"
+          name="password"
+          required
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.currentTarget.value)}
+        />
+        <button type="submit">
+          {processing ? "Checking credentials..." : "Login"}
+        </button>
+      </form>
+    </>
   );
 }

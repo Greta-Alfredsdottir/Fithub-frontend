@@ -16,7 +16,6 @@ export function Homepage({ name }) {
   // string "" med fuld Url + data, så ser man image
   return (
     <>
-      <Navigation />
       <img
         src={"http://localhost:3000" + data?.[0].image.url}
         alt={"trainerimage"}
