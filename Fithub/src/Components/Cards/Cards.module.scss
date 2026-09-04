@@ -1,6 +1,8 @@
 .Cardcontainer {
+  display: flex;
+  flex-direction: row;
   img {
-    width: 100%;
+    width: 25%;
     height: auto;
   }
 }

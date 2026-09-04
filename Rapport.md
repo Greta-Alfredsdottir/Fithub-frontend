@@ -18,8 +18,9 @@ Tirsdag: Har fået hjælp fra Kasper, hvor han pejede på at jeg havde glemt at 
 
 Onsdag: Kasper hjælp mig med at lave coden lidt simpler, og så har jeg lavet input på searchpage, mangler stadig at lave navlink til min frontpage.
 
-Torsdag:
-Fredag:
+Torsdag: Har fået nav til at virke men har problemmer med at få burgermenu. havde også lidt problemmer med navLink, fandt så ud at min kode car forkert. problem rettet.
+
+Fredag: har lige fået at vide at burgermenu er bare icon, men har meget problem ved at finde ud af hvad jeg skal gøre for at få det hele til at køre som jeg vil.
 
 Vurdering af din egen indsats og gennemførelse af prøven.
 Argumentation for de valg du har truffet under løsningen af opgaven.
